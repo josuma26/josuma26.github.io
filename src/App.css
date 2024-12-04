@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  background-color: #de3ca0e8;
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: heartbeat 2.5s infinite ease-in-out;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-link {
+  color: #fac775;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  25% {
+    transform: scale(1.1); /* Grow larger */
+  }
+  50% {
+    transform: scale(1); /* Back to normal */
+  }
+  75% {
+    transform: scale(1.1); /* Grow larger again */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
